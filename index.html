@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zisr</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/fullpage.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/fullpage.min.css">
+
+    <script>
+    $(document).ready(function(){
+       $('#fullpage').fullpage({
+            licenseKey:'OPEN-SOURCE-GPLV3-LICENSE',
+            anchors:['0st','1st','2st','3st'],
+            menu:"#topMenu",
+            scrollingSpeed: 1000,
+            slidesNavigation: true,
+            slidesNavPosition: 'bottom',
+
+            onLeave: function(origin, destination, direction) {
+                var leavingSection = this;
+                if(origin.index == 0) {
+                    $('.cot_inbox .cot_txt ul li').delay(400).fadeIn();
+                }
+                if(origin.index == 2) {
+                    $('.cot_inbox .cot_txt ul li').delay(600).fadeIn();
+                }
+                if(origin.index == 1) {
+                    $('.cot_inbox .cot_txt ul li').fadeOut();
+                }
+            }
+        });    
+        $('#logo').on('click',function(){
+            $.fn.fullpage.moveTo(1);
+        });
+        
+        $(".popupVideo1 a").click(function() {
+          $(".video-popup").addClass("reveal"),
+          $(".video-popup .video-wrapper").remove(),
+          $(".video-popup").append("<div class='video-wrapper'><iframe width='100%' height='100%' src='https://youtube.com/embed/" + $(this).data("video") + "?rel=0&playsinline=1&autoplay=1' allow='autoplay; encrypted-media' allowfullscreen></iframe></div>")
+        }),
+        $(".video-popup-closer").click(function() {
+          $(".video-popup .video-wrapper").remove(),
+          $(".video-popup").removeClass("reveal")
+        });
+        
+
+        $(".popupVideo2 a").click(function() {
+          $(".video-popup2").addClass("reveal"),
+          $(".video-popup2 .video-wrapper").remove(),
+          $(".video-popup2").append("<div class='video-wrapper'><iframe width='100%' height='100%' src='https://youtube.com/embed/" + $(this).data("video") + "?rel=0&playsinline=1&autoplay=1' allow='autoplay; encrypted-media' allowfullscreen></iframe></div>")
+        }),
+        $(".video-popup-closer").click(function() {
+          $(".video-popup .video-wrapper").remove(),
+          $(".video-popup").removeClass("reveal")
+        });
+        
+        $(".popupVideo3 a").click(function() {
+          $(".video-popup3").addClass("reveal"),
+          $(".video-popup3 .video-wrapper").remove(),
+          $(".video-popup3").append("<div class='video-wrapper'><iframe width='100%' height='100%' src='https://youtube.com/embed/" + $(this).data("video") + "?rel=0&playsinline=1&autoplay=1' allow='autoplay; encrypted-media' allowfullscreen></iframe></div>")
+        }),
+        $(".video-popup-closer").click(function() {
+          $(".video-popup .video-wrapper").remove(),
+          $(".video-popup").removeClass("reveal")
+        });
+    });    
+    </script>
+</head>
+<body>
+    <nav id="navTop">
+       <div id="navTop_box">
+            <div id="logo">
+                <div><img src="img/flower.png" alt="logo"></div>
+                <span>박지수 / Park JiSu</span>
+            </div>
+            <style>
+                #navTop_box #topMenu li.active > a {color: #fec8c9; border-bottom: 3px solid #fec8c9; font-weight: bold; padding-bottom: 4px;}
+            </style>
+            <ul id="topMenu">
+                <li data-menuanchor="0st"><a href="#0st">HOME</a></li>
+                <li data-menuanchor="1st"><a href="#1st">ABOUT ME</a></li>
+                <li data-menuanchor="2st"><a href="#2st">CONTACT</a></li>
+                <li data-menuanchor="3st"><a href="#3st">PORTFOLIO</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <div id="fullpage" >
+       <div class="section">
+                <div class="section_home">
+                    <h2>Park Jisu</h2>
+                    <h1>PORTFOLIO</h1>
+                    <div id="home_right">
+                        <div id="home_right_txt">2020.09.START</div>
+                    </div>
+                    <div id="home_bottom_txt">Responsive Web | Last Update 20.12.00</div>
+                    <hr class="home_line home_right_line">
+                    <hr class="home_line home_left_line">
+                    <hr class="home_line home_bottom_line">
+                    <hr class="home_line home_middle_line1">
+                    <hr class="home_line home_middle_line2">
+                </div>
+        </div>
+                
+<!--        <div class="section fp-section fp-table" data-fp-styles="null" style="height:100vh; background-color: rgb(238, 238, 238, 0.8;);" id="1st">-->
+        <div class="section">  
+            <div class="section_content section_content1">
+            <h2>PROFILE</h2>
+                <div class="pr_container">
+                    <div class="pr_profile">
+                        <div><img src="img/my_p.jpg" alt=""></div>
+                        <ul>
+                            <li style="font-style: italic;">박지수 / Park JiSu</li>
+                            <li><i class="fas fa-user"></i>010-7114-2149</li>
+                            <li><i class="fas fa-calendar"></i>1997.07.11 (만 23세)</li>
+                            <li><i class="fas fa-map-marker-alt"></i>부천 성오로 거주</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="right_box">
+                        <div class="pr_box edu_box">
+                            <h3 class="pr_title edu_title" style="font-style: italic;">EDUCATION</h3>
+                            <div class="pr_date edu_date">
+                                <div>2014.03 - 2016.01</div>
+                                <div>2016.09 - 2020.05</div>
+                                <div>2020.09 - 2021.02<br> (000일)</div>
+                            </div>
+                            <div class="pr_txt edu_txt">
+                                <div>서울 덕원여자고등학교 | 문과계열</div>
+                                <div>중국 후베이성 우한대학교 | 광고학과전공 (졸업)</div>
+                                <div>멀티미디어콘텐츠제작 (앱콘텐츠, 영상콘텐츠)</div>
+                                <ul>
+                                    <li>- 교육기관: 방송정보국제교육원 (서울 영등포구)</li>
+                                    <li>- 교육기간: 2020-09-26 ~ 2020-02-16</li>
+                                    <li>- 교육내용: HTML5, CSS3, JavaScript, jQuery / adobe</li>  
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pr_box cer_box">
+                            <h3 class="pr_title cer_title" style="font-style: italic;">LICENSE</h3>
+                            <div class="pr_date cer_date">
+                                <div>2020.09</div>
+                                <div>2020.07</div>
+                                <div>2020.04</div>
+                                <div>2016.02</div>
+                            </div>
+                            <div class="pr_txt cer_txt">
+                                <div>운전면허 자동보통2종</div>
+                                <div>新HSK6급 218점</div>
+                                <div>MOS Master</div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--pr_container-->
+            </div><!--section_box section_box_content-->  
+        </div>      
+        <div class="section">   
+            <div class="borderbox">
+                 <div class="pr_box like_box">
+                        <div class="skill">
+                            <img src="img/like.PNG" alt="skill">
+                            <h2>SKILL/TOOL</h2>
+                            <br><br>
+                            <p>편집툴 / Premiere</p>
+                            <p>그래픽툴 / After effect, Photoshop, Illustrator</p>
+                            <p>웹 구현/ javascript, Html5, css3, Jquery</p>
+                         </div>
+                         <div class="type">
+                          <img src="img/like_3.PNG" alt="hobby">
+                          </div>
+                   </div>
+              </div>
+            
+            <div class="cot_box">
+                <div class="cot_inbox">
+                    <div class="cot_title"><h3>contact</h3></div>
+                    <div class="cot_txt">
+                        <ul>
+                            <li><img src="img/con_email.png" alt=""></li>
+                            <li>pjisu2149@gmail.com</li>
+                        </ul>
+                        <ul>
+                            <li><img src="img/con_kakao.png" alt=""></li>
+                            <li>su2149</li>
+                        </ul>
+                        <ul>
+                            <li><img src="img/con_phone.png" alt=""></li>
+                            <li>010-7114-2149</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- cot-box-->
+        </div><!-- contact-->
+        <div class="section">
+            <div class="section_content section_content3">
+            <div class="section_content section_content3">
+                <div class="slide slide_1">
+                    <h2>PORTFOLIO 1</h2>
+                    <div class="pf_img_container">
+                        <div class="pf_img_1"><img src="img/bts.jpg" alt="" style="margin-top: 120px;"></div>
+                    </div>
+                    <div class="pf_txt_container">
+                        <h3 class="pf_title">아이돌 프로모션</h3>
+                        <div class="mpf_img mpf_img_1"><img src="img/bts.jpg" alt=""></div>
+                        <div>
+                            <br><span class="pf_name">프로젝트 명:</span>
+                            <span class="pf_txt">&lt;아이돌 프로모션_BTS&gt;</span>
+                        </div>
+                        <div>
+                            <p>역할: &nbsp;단독 프로젝트</p>
+                        </div>
+                        <div>
+                            <p>소요기간: &nbsp;약 40시간 소요 </p>
+                        </div>
+                        <div>
+                            <p>컨셉: &nbsp;‘dynamite’ 무대 인트로 영상.<br>
+방탄소년단의 상징색인 보라색을 메인컬러로 사용하였다.
+곡의 하이라이트 부분에 맞춰 장면을 변환시켜 
+생동감있게 넘어가도록 제작하였다.</p>
+                        </div>
+                         <div>
+                            <span class="pf_name">사용기술:</span>
+                            <span class="pf_txt">포토샵,애프터이펙트,프리미어</span>
+                        </div>
+                    <br><div class="pf_viewmore">
+                         <div class="popupVideo1">
+                          <a href="#" onclick="window.open('https://youtu.be/Q0gXEk1jYv4','bts')">Click</a></div>
+                   </div>
+                </div>
+                <div class="slide slide_2">
+                    <h2>PORTFOLIO 2</h2>
+                    <div class="pf_img_container">
+                        <div class="pf_img_1"><img src="img/drama.jpg" alt="" style="margin-top: 120px;"></div>
+                    </div>
+                   <div class="pf_txt_container">
+                        <h3 class="pf_title">드라마 라인업</h3>
+                        <div class="mpf_img mpf_img_1"><img src="img/drama.jpg" alt="" style="margin-top: 18px;"></div>
+                        <div>
+                            <br><span class="pf_name">프로젝트 명:</span>
+                            <span class="pf_txt"> &lt;드라마 라인업&gt;</span>
+                        </div>
+                        <div>
+                            <p>역할: &nbsp;단독 프로젝트</p>
+                        </div>
+                        <div>
+                            <p>제작 소요기간: &nbsp;약 43시간 소요 </p>
+                        </div>
+                        <div>
+                            <p>컨셉: &nbsp;mbc 플러스 채널에서 코로나 시기에 삭막한 사회 분위기를
+한층 따뜻하게 만들어줄 로맨틱코미디로 라인업을 잡았다.<br>
+마마무의 [나로 말할 것 같으면]을 배경음악으로 사용하였고,
+각 부분에 맞게 아기자기한 일러스트와 이펙트를 넣어 보는 즐거움을 더했다.</p>
+                        </div>
+                         <div>
+                            <span class="pf_name">사용기술:</span>
+                        <span class="pf_txt">포토샵, 일러스트,애프터이펙트,프리미어</span>
+                        </div>
+                        <br><div class="pf_viewmore">
+                            <div class="popupVideo2">
+                            <a href="#" onclick="window.open('https://youtu.be/ICSLRMLLWeE','dramalineup')">Click</a></div>
+                       </div>
+                </div>
+            </div>
+            <div class="slide slide_3">
+                    <h2>PORTFOLIO 3</h2>
+                    <div class="pf_img_container">
+                        <div class="pf_img_1"><img src="img/drama.jpg" alt="" style="margin-top: 120px;"></div>
+                    </div>
+                   <div class="pf_txt_container">
+                        <h3 class="pf_title">드라마 라인업</h3>
+                        <div class="mpf_img mpf_img_1"><img src="img/drama.jpg" alt="" style="margin-top: 18px;"></div>
+                        <div>
+                            <br><span class="pf_name">프로젝트 명:</span>
+                            <span class="pf_txt"> &lt;드라마 라인업&gt;</span>
+                        </div>
+                        <div>
+                            <p>역할: &nbsp;단독 프로젝트</p>
+                        </div>
+                        <div>
+                            <p>제작 소요기간: &nbsp;약 43시간 소요 </p>
+                        </div>
+                        <div>
+                            <p>컨셉: &nbsp;mbc 플러스 채널에서 코로나 시기에 삭막한 사회 분위기를
+한층 따뜻하게 만들어줄 로맨틱코미디로 라인업을 잡았다.<br>
+마마무의 [나로 말할 것 같으면]을 배경음악으로 사용하였고,
+각 부분에 맞게 아기자기한 일러스트와 이펙트를 넣어 보는 즐거움을 더했다.</p>
+                        </div>
+                         <div>
+                            <span class="pf_name">사용기술:</span>
+                        <span class="pf_txt">포토샵, 일러스트,애프터이펙트,프리미어</span>
+                        </div>
+                        <br><div class="pf_viewmore">
+                            <div class="popupVideo2">
+                            <a href="#" onclick="window.open('https://youtu.be/ICSLRMLLWeE','dramalineup')">Click</a></div>
+                       </div>
+                </div>
+            </div>
+            <div class="slide slide_4">
+                    <h2>PORTFOLIO 4</h2>
+                    <div class="pf_img_container">
+                        <div class="pf_img_1"><img src="img/drama.jpg" alt="" style="margin-top: 120px;"></div>
+                    </div>
+                   <div class="pf_txt_container">
+                        <h3 class="pf_title">드라마 라인업</h3>
+                        <div class="mpf_img mpf_img_1"><img src="img/drama.jpg" alt="" style="margin-top: 18px;"></div>
+                        <div>
+                            <br><span class="pf_name">프로젝트 명:</span>
+                            <span class="pf_txt"> &lt;드라마 라인업&gt;</span>
+                        </div>
+                        <div>
+                            <p>역할: &nbsp;단독 프로젝트</p>
+                        </div>
+                        <div>
+                            <p>제작 소요기간: &nbsp;약 43시간 소요 </p>
+                        </div>
+                        <div>
+                            <p>컨셉: &nbsp;mbc 플러스 채널에서 코로나 시기에 삭막한 사회 분위기를
+한층 따뜻하게 만들어줄 로맨틱코미디로 라인업을 잡았다.<br>
+마마무의 [나로 말할 것 같으면]을 배경음악으로 사용하였고,
+각 부분에 맞게 아기자기한 일러스트와 이펙트를 넣어 보는 즐거움을 더했다.</p>
+                        </div>
+                         <div>
+                            <span class="pf_name">사용기술:</span>
+                        <span class="pf_txt">포토샵, 일러스트,애프터이펙트,프리미어</span>
+                        </div>
+                        <br><div class="pf_viewmore">
+                            <div class="popupVideo2">
+                            <a href="#" onclick="window.open('https://youtu.be/ICSLRMLLWeE','dramalineup')">Click</a></div>
+                       </div>
+                </div>
+            </div>
+            <div id="footer">
+                    <div id="footer_txt">Copyright 2020.Park JiSu All rights reserved</div>
+            </div>
+         </div>
+        </div> 
+        </div>
+    </div> <!-- section-->
+</div> <!--fullpage-->
+</body>
+</html>
