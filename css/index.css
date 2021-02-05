@@ -1,4 +1,4 @@
-body {font-family: 'sans-serif', 'Raleway'; cursor: default; }
+body {font-family: 'sans-serif', 'Raleway'; cursor: default;}
 #navTop {position: fixed; width: 100%; height: 70px; z-index: 1; overflow: hidden; background: #fff; border-bottom: 1px solid #ccc;}
 #navTop_box {width: 80%; height: 70px; margin: 0 auto; transition: all 1s; position: relative;}
 #navTop_box #logo {width: 100px; overflow: hidden; position: relative;}
@@ -112,11 +112,12 @@ body {font-family: 'sans-serif', 'Raleway'; cursor: default; }
 
 @media screen and (min-width:1280px) and (max-width:1599px) {
 #navTop_box {width: 90%; transition: all 1s;}
-.section_content {width: 90%;}
+.section_content3 {width: 90%;}
 .home_middle_line1 {width: 35%; transition: all 1s;}
 .home_middle_line2 {width: 10%;}
+.slide .mpf_img_container {width: 70%;}
 }
-.slide .mpf_img_container {width: 80%;}
+
 
 @media screen and (min-width:768px) and (max-width:1279px) {
 #navTop {width: 100%; height: 60px;}
@@ -189,12 +190,12 @@ body {font-family: 'sans-serif', 'Raleway'; cursor: default; }
     
 /*s3*/
 .slide h2 {padding-bottom: 45px; }
-.section_content3 {width: 85%;}
+.section_content3 {width: 90%;}
 .slide .pf_img_container {display: none;}
-.slide .pf_txt_container {width: 100%; padding-left: 20px; padding-right: 20px; margin-top: -30px;}
+.slide .pf_txt_container {width: 100%; padding-left: 20px; padding-right: 20px; margin-top: -30px; text-align: left;}
 .slide .pf_txt_container p {font-size: 14px;}
 .slide .pf_txt_container .pf_title {display: none;}
-.slide .pf_txt_container .mpf_img {display: block; width: 55%; margin: 0 auto;}
+.slide .pf_txt_container .mpf_img {display: block; width: 40%; margin: 0 auto;}
 .slide .pf_txt_container .pf_name {width: 25%; float: left; padding: 8px 0px; font-size: 14px; line-height: 1.3;}
 .slide .pf_txt_container .pf_txt {width: 75%; padding: 8px 0px; font-weight: bold; font-size: 14px; line-height: 1.3;}
 .slide .pf_txt_container .pf_subtxt {display: none;}
