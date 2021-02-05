@@ -194,7 +194,7 @@ body {font-family: 'sans-serif', 'Raleway'; cursor: default; }
 .slide .pf_txt_container {width: 100%; padding-left: 20px; padding-right: 20px; margin-top: -30px;}
 .slide .pf_txt_container p {font-size: 14px;}
 .slide .pf_txt_container .pf_title {display: none;}
-.slide .pf_txt_container .mpf_img {display: block;margin-top: 25px;}
+.slide .pf_txt_container .mpf_img {display: block;}
 .slide .pf_txt_container .pf_name {width: 25%; float: left; padding: 8px 0px; font-size: 14px; line-height: 1.3;}
 .slide .pf_txt_container .pf_txt {width: 75%; padding: 8px 0px; font-weight: bold; font-size: 14px; line-height: 1.3;}
 .slide .pf_txt_container .pf_subtxt {display: none;}
@@ -286,7 +286,7 @@ body {font-family: 'sans-serif', 'Raleway'; cursor: default; }
 .slide .pf_txt_container {width: 100%; padding-left: 10px; padding-right: 10px; margin-top: -30px;}
 .slide .pf_txt_container p {font-size: 13px;}
 .slide .pf_txt_container .pf_title {display: none;}
-.slide .pf_txt_container .mpf_img {display: block;margin-top: 25px;}
+.slide .pf_txt_container .mpf_img {display: block;;}
 .slide .pf_txt_container .pf_name {width: 34%; float: left; padding: 5px 0px; font-size: 13px; line-height: 1.3;}
 .slide .pf_txt_container .pf_txt {width: 64%; padding: 6px 0px; font-weight: bold; font-size: 13px; line-height: 1.3;}
 .slide .pf_txt_container .pf_subtxt {display: none;}
