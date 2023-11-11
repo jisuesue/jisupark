@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>웹 퍼블리셔 포트폴리오 | 박지수</title>
+    <title>홍보마케팅 포트폴리오 | 박지수</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -23,7 +23,7 @@
         <div id="navTop_box">
             <div id="logo">
                 <div><img src="img/logo_black2.png" alt=""></div>
-                <span>곽승지 / Gwak SeungJi</span>
+                <span>박지수 / Park JiSu</span>
             </div>
             <ul id="topMenu">
                 <li data-menuanchor="0st"><a href="#0st">HOME</a></li>
@@ -36,12 +36,12 @@
     <div id="full-page">
         <div class="section s0">
             <div class="section_home">
-                <h2>Web Publisher</h2>
+                <h2>Marketer</h2>
                 <h1>PORTFOLIO</h1>
                 <div id="home_right">
                     <div id="home_right_txt">2020.03.START</div>
                 </div>
-                <div id="home_bottom_txt">Responsive Web | Last Update 20.08.25</div>
+                <div id="home_bottom_txt">Responsive Web | Last Update 23.11.10</div>
                 <hr class="home_line home_right_line">
                 <hr class="home_line home_left_line">
                 <hr class="home_line home_bottom_line">
@@ -56,7 +56,7 @@
                     <div class="pr_profile">
                         <div><img src="img/my_photo2.jpg" alt=""></div>
                         <ul>
-                            <li>곽승지 / Gwak SeungJi</li>
+                            <li>박지수 / Park JiSu</li>
                             <li><i class="fas fa-user"></i>Web Publisher</li>
                             <li><i class="fas fa-calendar"></i>1996.01.31 (만 24세)</li>
                             <li><i class="fas fa-map-marker-alt"></i>서울 용산구 거주</li>
